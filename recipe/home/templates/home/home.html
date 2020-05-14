@@ -1,4 +1,29 @@
 {% extends "home/base.html" %}
+{% load crispy_forms_tags %}
 {% block content %}
-<h2>homepage content</h2>
+<div class="content-section">
+<form method="POST">
+    {% csrf_token %}
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Enter Recipe URL</legend>
+        {{ form|crispy }}
+    </fieldset>
+    <div class="form-group">
+        <button class="btn btn-outline-info" type="submit">Submit</button>
+    </div>
+</form>
+</div>
+{% if ingredients %}
+<div class="content-section">
+    <h2>{{ title }}</h2>
+    <br>
+    <ul>
+        {% for ingredient in ingredients %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+    <p>{{ instructions }}</p>
+</div>
+{% endif %}
 {% endblock content %}
