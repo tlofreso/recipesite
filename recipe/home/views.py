@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import RecipeParseForm
 from recipe_scrapers import scrape_me
 
