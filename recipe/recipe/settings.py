@@ -11,9 +11,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = "&-7=xg4uarg8c@qhn&&=h9-%=1j(xt@^5s+w9c3k&0*oea1%p*"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ["localhost", "127.0.0.1", "192.168.128.98", "67.23.153.55"]
+ADMIN_ENABLED = False
+
+ALLOWED_HOSTS = ["157.245.94.28"]
 
 
 # Application definition
@@ -22,7 +24,7 @@ INSTALLED_APPS = [
     "home.apps.HomeConfig",
     "users.apps.UsersConfig",
     "crispy_forms",
-    "django.contrib.admin",
+    # "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
