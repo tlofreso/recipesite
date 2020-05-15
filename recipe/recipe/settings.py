@@ -1,4 +1,8 @@
 import os
+import json
+
+with open("/etc/config.json") as config_file:
+    config = json.dumps(config_file)
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -8,14 +12,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "&-7=xg4uarg8c@qhn&&=h9-%=1j(xt@^5s+w9c3k&0*oea1%p*"
+SECRET_KEY = config["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
 ADMIN_ENABLED = False
 
-ALLOWED_HOSTS = ["157.245.94.28"]
+ALLOWED_HOSTS = ["157.245.94.28", "localhost"]
 
 
 # Application definition
