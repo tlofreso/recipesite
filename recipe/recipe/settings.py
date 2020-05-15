@@ -19,7 +19,7 @@ DEBUG = False
 
 ADMIN_ENABLED = False
 
-ALLOWED_HOSTS = ["157.245.94.28", "localhost"]
+ALLOWED_HOSTS = ["192.241.152.20"]
 
 
 # Application definition
