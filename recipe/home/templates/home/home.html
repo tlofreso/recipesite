@@ -9,7 +9,7 @@
         {{ form|crispy }}
     </fieldset>
     <div class="form-group">
-        <button class="btn btn-outline-info" type="submit">🔪 Mince! 🔪</button>
+        <button class="btn btn-secondary" type="submit">🔪 Mince! 🔪</button>
     </div>
 </form>
 </div>
@@ -24,6 +24,81 @@
     </ul>
     <br>
     <p>{{ instructions }}</p>
+</div>
+{% else %}
+<div class="content-section">
+    <legend class="border-bottom mb-4">Get a crap free recipe</legend>
+    <p>
+        Paste a recipe link from any of the <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+        supported sites</a> in the box above, and get back only what you care about.
+    </p>
+    <div class="collapse" id="collapseExample">
+        <div>
+            <ul>
+                <li>http://101cookbooks.com/</li>
+                <li>http://allrecipes.com/</li>
+                <li>http://bbc.com/</li>
+                <li>http://bbc.co.uk/</li>
+                <li>http://bbcgoodfood.com/</li>
+                <li>http://bettycrocker.com/</li>
+                <li>http://bonappetit.com/</li>
+                <li>https://www.budgetbytes.com/</li>
+                <li>http://closetcooking.com/</li>
+                <li>https://cookpad.com/</li>
+                <li>http://cookstr.com/</li>
+                <li>http://copykat.com/</li>
+                <li>https://cybercook.com.br/</li>
+                <li>https://en.wikibooks.org/</li>
+                <li>http://delish.com/</li>
+                <li>http://epicurious.com/</li>
+                <li>http://finedininglovers.com/</li>
+                <li>https://food.com/</li>
+                <li>http://foodnetwork.com/</li>
+                <li>http://foodrepublic.com/</li>
+                <li>https://geniuskitchen.com/</li>
+                <li>https://greatbritishchefs.com/</li>
+                <li>http://giallozafferano.it/</li>
+                <li>http://gonnawantseconds.com/</li>
+                <li>https://www.gousto.co.uk/</li>
+                <li>https://healthyeating.nhlbi.nih.gov/</li>
+                <li>https://heinzbrasil.com.br/</li>
+                <li>https://www.hellofresh.com/</li>
+                <li>https://www.hellofresh.co.uk/</li>
+                <li>https://receitas.ig.com.br/</li>
+                <li>https://inspiralized.com/</li>
+                <li>http://jamieoliver.com/</li>
+                <li>https://justbento.com/</li>
+                <li>https://kennymcgovern.com/</li>
+                <li>https://www.thekitchn.com/</li>
+                <li>https://www.marmiton.org/</li>
+                <li>https://www.matprat.no/</li>
+                <li>http://www.mindmegette.hu/</li>
+                <li>https://www.misya.info/</li>
+                <li>http://www.motherthyme.com/</li>
+                <li>http://mybakingaddiction.com/</li>
+                <li>https://panelinha.com.br/</li>
+                <li>http://paninihappy.com/</li>
+                <li>http://przepisy.pl/</li>
+                <li>http://realsimple.com/</li>
+                <li>https://www.seriouseats.com/</li>
+                <li>http://simplyrecipes.com/</li>
+                <li>https://www.southernliving.com/</li>
+                <li>http://steamykitchen.com/</li>
+                <li>https://www.tastesoflizzyt.com</li>
+                <li>http://tastykitchen.com/</li>
+                <li>http://thepioneerwoman.com/</li>
+                <li>https://www.thespruceeats.com/</li>
+                <li>http://thehappyfoodie.co.uk/</li>
+                <li>http://thevintagemixer.com/</li>
+                <li>http://tine.no/</li>
+                <li>https://tudogostoso.com.br/</li>
+                <li>http://twopeasandtheirpod.com/</li>
+                <li>http://vegolosi.it/</li>
+                <li>http://whatsgabycooking.com/</li>
+                <li>http://yummly.com/</li>
+            </ul>
+        </div>
+</div>
 </div>
 {% endif %}
 {% endblock content %}
