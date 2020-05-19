@@ -19,7 +19,11 @@ DEBUG = False
 
 ADMIN_ENABLED = False
 
-ALLOWED_HOSTS = ["192.241.152.20", "recipemincer.com", "www.recipemincer.com"]
+ALLOWED_HOSTS = [
+    "192.241.152.20",
+    "recipemincer.com",
+    "www.recipemincer.com",
+]
 
 
 # Application definition
