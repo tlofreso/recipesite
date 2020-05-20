@@ -15,7 +15,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config["SECRET_KEY"]
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ADMIN_ENABLED = False
 
@@ -23,8 +23,6 @@ ALLOWED_HOSTS = [
     "192.241.152.20",
     "recipemincer.com",
     "www.recipemincer.com",
-    "localhost",
-    "192.168.128.98",
 ]
 
 
